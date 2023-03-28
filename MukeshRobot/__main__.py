@@ -94,7 +94,7 @@ buttons = [
         InlineKeyboardButton(text="⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs⚡", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="💫 ᴜᴘᴅᴀᴛᴇs 💫 ", url=f" https://t.me/the_update_silencer")),
+        InlineKeyboardButton(text="💫 ᴜᴘᴅᴀᴛᴇs 💫 ", url=f"https://t.me/the_update_silencer"),
         InlineKeyboardButton(text="📍sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ📍", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -891,7 +891,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/e2b12aa3a88333ed74cfb.mp4",
+                animation="https://te.legra.ph/file/0e8c37db7d05bbf4d361b.mp4",
                 caption=f"""
 ✨ㅤ{dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
