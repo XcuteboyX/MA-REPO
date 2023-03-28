@@ -10,27 +10,23 @@ from telethon import __version__ as tver
 from MukeshRobot import SUPPORT_CHAT, pbot,BOT_USERNAME, OWNER_ID
 
 PHOTO = [
-    "https://telegra.ph/file/d2a23fbe48129a7957887.jpg",
-    "https://telegra.ph/file/ddf30888de58d77911ee1.jpg",
-    "https://telegra.ph/file/268d66cad42dc92ec65ca.jpg",
-    "https://telegra.ph/file/13a0cbbff8f429e2c59ee.jpg",
-    "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
+    "https://te.legra.ph/file/01c4b8a952caa98ae077d.jpg",
+    "https://te.legra.ph/file/0d985f6ca9a4bd359850f.jpg",
+    "https://te.legra.ph/file/098d0f42968661bedbe1f.jpg",
+    "https://te.legra.ph/file/40f6863b9906dbbdb714d.jpg",
+    "https://te.legra.ph/file/afd70e00524711264f7e7.jpg",
 ]
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
         InlineKeyboardButton(
-            text="➕ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+            text="➕ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
-lol = "https://telegra.ph/file/7773ebd713f9ba9ae71df.jpg"
+lol = "https://te.legra.ph/file/cb0935bc30ac8166dea5c.jpg"
 
 
 @pbot.on_message(filters.command("alive"))
@@ -48,7 +44,7 @@ async def restart(client, m: Message):
     await accha.delete()
     await asyncio.sleep(0.5)
     umm = await m.reply_sticker(
-        "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
+        "CAACAgUAAxkBAAIDGWQhN8ey9Dvph-T3sYjFSVTfvdsEAALXBwACMk_5V2DXDKayBrM0LwQ"
     )
     await umm.delete()
     await asyncio.sleep(2)
@@ -56,7 +52,7 @@ async def restart(client, m: Message):
         lol,
         caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ](f"t.me/{BOT_USERNAME}")』**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴍᴜᴋᴇsʜ](tg://user?id={OWNER_ID}))
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴏᴡɴᴇʀ](https://t.me/its_cute_babu)
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
@@ -70,7 +66,7 @@ async def restart(client, m: Message):
     )
 __mod_name__ = "⍟ ᴀʟɪᴠᴇ ⍟"
 __help__ = """
- ©️ [ᴍᴜᴋᴇsʜ] (f"tg://user?id={OWNER_ID}"))
+ ©️ [ᴏᴡɴᴇʀ] (f"tg://user?id={OWNER_ID}"))
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?"""
