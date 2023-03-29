@@ -1,4 +1,4 @@
-import importlib
+importance importlib
 import re
 import time
 import asyncio
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             time.sleep(0.3)
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
             time.sleep(0.4)
-            lol.delete()
+            lol.edit_text("CAACAgUAAxkBAAIDG2QhN85PjxC3IZl3hYefSbz_w60-AAI-CQAC5Nr5V3U6V4xWQpckLwQ")
             
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
