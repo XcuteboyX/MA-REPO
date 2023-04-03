@@ -70,12 +70,12 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-PM_START_TEX = """
+PM_START_TEXT = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
 
 
-PM_START_TEXT = """ 
+PM_START_TEX = """ 
 
 ʜᴇʏ* {} , 🥀
 *๏ ᴛʜɪs ɪs* {} !
@@ -233,7 +233,7 @@ def start(update: Update, context: CallbackContext):
             lol.delete()
             
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEX.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
@@ -447,7 +447,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
     elif query.data == "mukesh_back":
         first_name = update.effective_user.first_name 
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+            PM_START_TEX.format(escape_markdown(first_name), BOT_NAME),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
