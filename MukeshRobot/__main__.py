@@ -523,7 +523,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ),
             ],
                     [
-                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="mukesh_back"),
+                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="mukesh_"),
                     ],
                 ]
            ),
