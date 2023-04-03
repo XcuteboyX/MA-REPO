@@ -75,7 +75,7 @@ PM_START_TEX = """
 """
 
 
-PM_START_TEXT = """ 
+PM_START_TEXT = """
 
 ʜᴇʏ* {} , 🥀
 *๏ ᴛʜɪs ɪs* {} !
